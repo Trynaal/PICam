@@ -10,7 +10,7 @@ while True:
     faces = face_model.detectMultiScale(gray)
     visage=False
     for face in faces:
-        cv2.rectangle(gray, (face[0], face[1]), (face[0] + face[2], face[0] + face[3]), (255, 0, 0), 3)
+        cv2.rectangle(imageWebcam, (face[0], face[1]), (face[0] + face[2], face[0] + face[3]), (255, 0, 0), 3)
         out = cv2.imwrite('/var/www/html/uploads/%s.png' % (num), imageWebcam)
         num=num+1
 
