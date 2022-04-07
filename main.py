@@ -5,8 +5,8 @@ face_model = cv2.CascadeClassifier("cat.xml")
 while True:
 
     valeurRetour, imageWebcam = videoWebcam.read()
-    gray = imageWebcam
-    #gray = cv2.cvtColor(imageWebcam, cv2.COLOR_BGR2GRAY)
+    #gray = imageWebcam
+    gray = cv2.cvtColor(imageWebcam, cv2.COLOR_BGR2GRAY)
     faces = face_model.detectMultiScale(gray)
     visage=False
     for face in faces:
