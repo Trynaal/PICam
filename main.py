@@ -1,7 +1,7 @@
 import cv2
 num=0
 videoWebcam = cv2.VideoCapture(0)
-face_model = cv2.CascadeClassifier("cat.xml")
+face_model = cv2.CascadeClassifier("stop.xml")
 while True:
 
     valeurRetour, imageWebcam = videoWebcam.read()
